@@ -401,7 +401,7 @@ class Pdf2PdfOcr:
             self.force_out_file = ""
         self.tess_langs = args.tess_langs
         if self.tess_langs is None:
-            self.tess_langs = "por+eng"  # Default
+            self.tess_langs = "nld+eng"  # Default
         self.tess_psm = args.tess_psm
         if self.tess_psm is None:
             self.tess_psm = "1"  # Default
@@ -1081,7 +1081,7 @@ Examples:
     parser.add_argument("-e", dest="text_generation_strategy", action="store", default="tesseract", type=str,
                         help="specify how text is generated in final pdf file (tesseract, native). Default: tesseract")
     parser.add_argument("-l", dest="tess_langs", action="store", required=False,
-                        help="force tesseract to use specific languages (default: por+eng)")
+                        help="force tesseract to use specific languages (default: nld+eng)")
     parser.add_argument("-m", dest="tess_psm", action="store", required=False,
                         help="force tesseract to use HOCR with specific \"pagesegmode\" (default: tesseract "
                              "HOCR default = 1). Use with caution")
