@@ -45,8 +45,10 @@ RUN \
     # portuguese
     wget -q -P /usr/share/tessdata/ https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/por.traineddata && \
     # osd - hocr option
-    wget -q -P /usr/share/tessdata/ https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/osd.traineddata
+    wget -q -P /usr/share/tessdata/ https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/osd.traineddata && \
     # please download more languages if you need.
+    # nld - Dutch
+    wget -q -P /usr/share/tessdata/ https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/nld.traineddata
 RUN tesseract --list-langs    # just a test
 RUN apk add --no-cache file
 RUN apk add --no-cache bash
