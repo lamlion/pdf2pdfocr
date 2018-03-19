@@ -42,9 +42,7 @@ RUN \
     wget -q -P /usr/share/tessdata/ https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/eng.cube.word-freq && \
     wget -q -P /usr/share/tessdata/ https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/eng.tesseract_cube.nn && \
     wget -q -P /usr/share/tessdata/ https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/eng.traineddata && \
-    # portuguese
-    wget -q -P /usr/share/tessdata/ https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/por.traineddata && \
-    # osd - hocr option
+       # osd - hocr option
     wget -q -P /usr/share/tessdata/ https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/osd.traineddata && \
     # please download more languages if you need.
     # nld - Dutch
