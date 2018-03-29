@@ -2,8 +2,9 @@
 #
 # Dockerfile version 2.0 - Alpine linux
 #
-FROM alpine:3.5
-MAINTAINER Leonardo F. Cardoso <leonardo.f.cardoso@gmail.com>
+# Forked from Leonoardo F. Cardoso and ported to arm64v8
+FROM arm64v8/alpine:3.5
+MAINTAINER Feisal Lam-Lion <feisal@lamlion.com>
 
 RUN addgroup docker \
  && adduser -G docker -D docker \
